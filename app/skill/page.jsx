@@ -25,7 +25,7 @@ const page = () => {
      <div>
      {
         SKILLS.map((i)=>{
-            return <div className=" grid grid-cols-2 gap-20">
+            return <div key={i.name} className=" grid grid-cols-2 gap-20">
             <div className=" flex  gap-4 items-center">
               <Image src={i.logo} alt="" width={30} height={30} />
               <span className=" text-2xl font-extrabold">{i.name}</span>
